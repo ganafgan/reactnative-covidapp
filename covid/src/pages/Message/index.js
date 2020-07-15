@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-native'
-import { colors, fonts } from '../../utils'
-import { ILResearch, ILPatient, ILCorona, ILFever, ILDroplet, ILCough, ILBat, ILHuman, ILMedicine, ILInfected, ILApps } from '../../assets'
+import { ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { ILResearch, JsonAboutCovid } from '../../assets'
 import { AboutCovid } from '../../components'
+import { colors, fonts } from '../../utils'
 
 
 const Message = (props) => {
@@ -15,16 +15,16 @@ const Message = (props) => {
             </ImageBackground>
             <View style={styles.content}>
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    <AboutCovid img={ILCorona} title='Apa itu Covid-19 ?' onPress={()=> props.navigation.navigate('Covid1')}/>
-                    <AboutCovid img={ILPatient} title='Bagaimana cara mencegah penularan Covid-19 ?' />
-                    <AboutCovid img={ILFever} title='Apa saja gejala Covid-19 ?' />
-                    <AboutCovid img={ILDroplet} title='Seberapa bahaya Covid-19 ?' />
-                    <AboutCovid img={ILCough} title='Bagaimana manusia bisa terinfeksi Covid-19 ?' />
-                    <AboutCovid img={ILBat} title='Bisakah manusia terinfeksi dari hewan ?' />
-                    <AboutCovid img={ILHuman} title='Apakah Covid-19 dapat di tularkan antar manusia ?' />
-                    <AboutCovid img={ILMedicine} title='Apakah sudah ada vaksin atau obat untuk Covid-19 ?' />
-                    <AboutCovid img={ILInfected} title='Sipakah yang beresiko terinfeksi Covid-19 ?' />
-                    <AboutCovid img={ILApps} title='Dimana saya bisa mendapatkan informasi tentang Covid-19 ?' />
+                    {
+                        JsonAboutCovid.data.map((val)=>{
+                            return <AboutCovid 
+                                key={val.id}
+                                img={{uri: val.img}}
+                                title={val.title}
+                                onPress={() => props.navigation.navigate('Descriptions', {desc: val.desc, title: val.title})}
+                            />
+                        })
+                    }
                 </ScrollView>
             </View>
         </View>

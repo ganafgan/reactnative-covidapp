@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "img": "https://i.imgur.com/YrdwuM3.png",
+            "title": "Apa itu Covid-19 ?",
+            "desc": "Novel coronavirus (2019-nCov) adalah jenis baru coronavirus yang belum pernah diindentifikasi sebelumnya pada manusia. Coronavirus merupakan keluarga besar virus yang menyebabkan penyakit pada manusia dan hewan. Pada manusia menyebebkan penyakit mulai flu biasa hingga penyakit yang serius seperti Middle East Respiratory Syndrome (MERS) dan Syndrome Pernapasan Akut Berat/Severe Acute Respiratory Sydrome (SARS)"
+        },
+        {
+            "id": 2,
+            "img": "https://i.imgur.com/ZrvQaAk.png",
+            "title": "Bagaimana cara mencegah penularan Covid-19 ?",
+            "desc": "Hingga saat ini, belum ada vaksin untuk mencegah penularan. Namun bukan berarti kita tidak bisa berkontribusi untuk mencegah penularan penyakit ini. Bisa dengan sering mencuci tangan, jaga jarak dengan orang lain, selalu menggunakan master saat akan berpergian ke luar"
+        },
+        {
+            "id": 3,
+            "img": "https://i.imgur.com/FLOt1hG.png",
+            "title": "Apa saja gejala Covid-19 ?",
+            "desc": "Gejala Covid-19 yang paling umum adalah demam, batuk kering, dan rasa lelah. Gejala lainnya yang lebih jarang dan mungkin dialami beberapa pasien meliputi rasa nyeri dan sakit, hidung tersumbat, sakit kepala, sakit tenggorokan, diare, kehilangan indera rasa, ruam pada kulit, atau perubahan warna jari tangan atau kaki. Gejala gejala yang dialami biasanya bersifat ringan dan muncul secara bertahap. Beberapa orang menjadi terinfeksi tetapi hanya memiliki gejala ringan"
+        },
+        {
+            "id": 4,
+            "img": "https://i.imgur.com/2kRD82f.png",
+            "title": "Seberapa bahaya Covid-19 ?",
+            "desc": "Sebagian besar (sekitar 80%) orang yang terinfeksi berhasil pulih tanpa perlu perawatan khusus. Sekitar 1 dari 5 orang yang terinfeksi Covid-19 menderita sakit parah dan kesulitan bernapas. Orang orang lanjut usia dan orang orang dengan kondisi medis penyerta seperti tekanan darah tinggi, gangguan jantung dan paru paru, diabetes, atau kanker memiliki kemungkinan lebih besar mengalami sakit lebih serius. Namun, siapa pun dapat terinfeksi Covid-19 dan mengalami sakit yang serius"
+        },
+        {
+            "id": 5,
+            "img": "https://i.imgur.com/CJASHkI.png",
+            "title": "Bagaimana manusia bisa terinfeksi Covid-19 ?",
+            "desc": "Sampai saat ini belum diketahui bagaimana manusia terinfeksi virus ini. Para ahli masih sedang melakukan penyelidikan untuk menentukan sumber virus, jenis paparan, cara penularan dan pola klinis serta perjalanan penyakit. Hasil penyelidikan sementara dari beberapa institusi di Wuhan, sebagian kasus terjadi pada orang yang bekerja di pasar hewan/ikan, namun belum dapat dipastikan jenis hewan penular virus ini. Hingga saat ini dilaporkan adanya penularan antar manusia yang terbatas"
+        },
+        {
+            "id": 6,
+            "img": "https://i.imgur.com/ZkXvBQa.png",
+            "title": "Bisakah manusia terinfeksi dari hewan ?",
+            "desc": "Saat ini sumber hewan penular belum diketahui, WHO terus menyelidiki berbagai kemungkinan jenis hewan penularnya. Sangat dimungkinkan hewan dari pasar hewan hidup di Tiongkok bertanggung jawab atas terinfeksinya manusia yang dilaporkan pertama kali. Untuk itu, disarankan pada saat berkunjung ke pasar hewan hidup, hindari kontak langsung dengan hewan dan permukaan yang bersentuhan dengan hewan tanpa alat pelindung diri"
+        },
+        {
+            "id": 7,
+            "img": "https://i.imgur.com/x590pAn.png",
+            "title": "Apakah Covid-19 dapat ditularkan antar manusia ?",
+            "desc": "Ya, Covid-19 dapat ditularkan dari orang ke orang, biasanya setelah kontak erat dengan pasien yang terinfeksi, misalnya, di tempat kerja, di rumah tangga, atau fasilitas pelayanan kesehatan"
+        },
+        {
+            "id": 8,
+            "img": "https://i.imgur.com/1Jq42xO.png",
+            "title": "Apakah sudah ada vaksin atau obat untuk Covid-19 ?",
+            "desc": "Belum ada vaksin atau pengobatan spesifik untuk virus ini. Namun, gejala yang disebabkan virus ini dapat diobati. Oleh karena itu pengobatan harus didasarkan pada kondisi klinis pasien dan perawatan suportif dapat sangat efektif"
+        },
+        {
+            "id": 9,
+            "img": "https://i.imgur.com/OZksiW5.png",
+            "title": "Siapakah yang beresiko terinfeksi Covid-19 ?",
+            "desc": "Orang yang tinggal atau berpergian di daerah dimana virus 2019-nCov bsrsikulasi sangat mungkin beresiko terinfeksi. Saat ini, Tiongkok merupakan negara terjangkit Covid-18 dengan sebagian besar kasus telah dilaporkan. Mereka yang terinfeksi di negara lain adalah orang orang yang belum lama ini berpergian dari Tiongkok atau telah tinggal atau bekerja secara dekat dengan para wisatawan, seperti anggota keluarga, rekan kerja, atau tenaga medis yang merawat pasien sebelum mereka tahu pasien tersebut terinfeksi Covid-19"
+        },
+        {
+            "id": 10,
+            "img": "https://i.imgur.com/b5TY8KM.png",
+            "title": "Dimana saya bisa mendapatkan informasi tentang Covid-19 ?",
+            "desc": "Hotline Emergency di 119, Hotline Covid-19 08112093306 atau pada website BPNP https://bnpb-inacovid19.hub.arcgis.com/"
+        }
+    ]
+}

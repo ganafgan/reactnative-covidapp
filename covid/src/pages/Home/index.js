@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View, ImageBackground, Image, ScrollView } from 'react-native'
-import { colors, fonts } from '../../utils'
-import { ILDoctor3, ILPatient, ILHand, ILBuilding } from '../../assets'
-import {BoxItem, BoxItemBig, AboutCovid, ListNews, Loading} from '../../components'
 import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { ILDoctor3, JsonAboutCovid } from '../../assets'
+import { AboutCovid, BoxItemBig, ListNews, Loading } from '../../components'
+import { colors, fonts } from '../../utils'
+
 
 const Home = (props) => {
     
@@ -31,7 +32,7 @@ const Home = (props) => {
     }
 
     const getDataNews = () => {
-        var API_KEY = 'ae88de4fa148465f8f3d91c0ad3a77bd'
+        const API_KEY = 'ae88de4fa148465f8f3d91c0ad3a77bd'
         axios.get(`http://newsapi.org/v2/top-headlines?country=id&apiKey=${API_KEY}`)
         .then((res)=>{
             setDataNews(res.data.articles)
@@ -55,13 +56,27 @@ const Home = (props) => {
             return(
                 <ListNews
                     key={index}
-                    title={val.title.length > 75 ? val.title.slice(0,50) + '. . .' : val.title}
+                    title={val.title.length > 75 ? val.title.slice(0,55) + '. . .' : val.title}
                     img={{uri: val.urlToImage}}
                     onPress={val.url}
                 />
             )
         })
 
+    }
+
+    const renderAboutCovid = () => {
+
+        let aboutCovid = JsonAboutCovid.data.slice(0,3)
+
+        return aboutCovid.map((val)=>{
+            return <AboutCovid
+                    key={val.id}
+                    img={{uri: val.img}}
+                    title={val.title}
+                    onPress={() => props.navigation.navigate('Descriptions', {desc: val.desc, title: val.title})}
+                />
+        })
     }
 
     if( dataCovid === null || dataCovid.length === 0){
@@ -92,9 +107,7 @@ const Home = (props) => {
                     </View>
                     <View style={styles.content}>
                         <Text style={styles.title}>About Covid-19</Text>
-                        <AboutCovid img={ILPatient} title='Seputar gejala Covid-19' />
-                        <AboutCovid img={ILHand} title='Tips mencegah Covid-19' />
-                        <AboutCovid img={ILBuilding} title='Rumah Sakit rujukan Covid-19' />
+                        {renderAboutCovid()}
                     </View>
                     <View style={styles.content}>
                         <Text style={styles.title}>Covid-19 News</Text>

@@ -2,12 +2,12 @@ import Splash from './Splash';
 import Home from './Home';
 import Location from './Location';
 import Message from './Message';
-import PageCovid1 from './PageCovid1.js'
+import Descriptions from './Descripctions'
 
 export {
     Splash,
     Home,
     Location,
     Message,
-    PageCovid1
+    Descriptions
 }

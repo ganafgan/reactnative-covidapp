@@ -2,9 +2,12 @@ import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { ILResearch } from '../../assets'
 import { colors, fonts } from '../../utils'
-import { Header } from '../../components'
 
-const PageCovid1 = () => {
+const Descriptions = (props) => {
+
+    const desc = props.route.params.desc
+    const title = props.route.params.title
+
     return (
         <View style={styles.container}> 
             <ImageBackground source={ILResearch} style={styles.img}>
@@ -12,19 +15,14 @@ const PageCovid1 = () => {
                 <Text style={styles.subtitle}>Covid-19</Text>
             </ImageBackground>
             <View style={styles.page}>
-                <Text style={styles.titlePage}>Apa itu Covid-19 ?</Text>
-                <Text style={styles.subtitlePage}>      Novel coronavierus (2019-nCov) adalah jenis baru coronavirus yang belum pernah
-                    diidentifikasi sebelumnya pada manusia. Coronavirus merupakan keluarga besar virus
-                    yang menyebabkan penyakit pada manusia dan hewan. Pada manusia menyebabkan penyakit
-                    mulai flu biasa hingga penyakit yang serius seperti Middle East Respiratory Syndrome (MERS)
-                    dan Sindrom Pernapasan Akut Berat/ Severe Acute Respiratory Syndrome (SARS)
-                </Text>
+                <Text style={styles.titlePage}>{title}</Text>
+                <Text style={styles.subtitlePage}>{desc}</Text>
             </View>
         </View>
     )
 }
 
-export default PageCovid1
+export default Descriptions
 
 const styles = StyleSheet.create({
     container: {
@@ -57,8 +55,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         fontSize: 18,
         fontFamily: fonts.primary[600],
-        marginTop: 50
-
+        marginTop: 50,
+        textAlign: 'left',
     },
     subtitlePage: {
         paddingHorizontal: 20,
