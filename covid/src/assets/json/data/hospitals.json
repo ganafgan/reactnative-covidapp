@@ -1,0 +1,66 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "nama": "RSUP Hasan Sadikin",
+            "alamat": "Jl. Pasteur No.38",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rsup-dr-hasan-sadikin-HCFH00000548.jpg"
+        },
+        {
+            "id": 2,
+            "nama": "Santosa Hospital",
+            "alamat": "Jl. Kebon Jati No.38",
+            "img": "https://santosa-hospital.com/upload_files/images/shbk-link.png"
+        },
+        {
+            "id": 3,
+            "nama": "Santo Boromeus",
+            "alamat": "Jl. Juanda No. 100",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-borromeus-HCFH00000543.jpg"
+        },
+        {
+            "id": 4,
+            "nama": "Santo Yusup",
+            "alamat": "Jl. Cikutra No. 7",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-yusup-HCFH00000547.jpg"
+        }
+        ,
+        {
+            "id": 5,
+            "nama": "Imanuel Bandung",
+            "alamat": "Jl. Kopo No. 161 ",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-immanuel-HCFH00000640.jpg"
+        },
+        {
+            "id": 6,
+            "nama": "Muhammadiyah Bandung",
+            "alamat": "Jl. KH Ahmad Dahlan No. 53",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-muhammadiyah-bandung-HCFH00000545.jpg"
+        },
+        {
+            "id": 7,
+            "nama": "Advent Bandung",
+            "alamat": "Jalan Cihampelas No. 161",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-advent-bandung-HCFH00000542.jpg"
+        },
+        {
+            "id": 8,
+            "nama": "Dr. M. Salamun",
+            "alamat": "Jl. Raya Ciumbeulit No. 203",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-angkatan-udara-dr-m-salamun-HCFH00000621.jpg"
+        },
+        {
+            "id": 9,
+            "nama": "Kebon Jati",
+            "alamat": "Jl. Kebonjati No.152",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-kebon-jati-HCFH00000549.jpg"
+        },
+        {
+            "id": 10,
+            "nama": "KCK Pindad",
+            "alamat": "Jl. Gatot Subroto No.517",
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-mata-bandung-eye-center-HCFH00001354.jpg"
+        }
+
+    ]
+}

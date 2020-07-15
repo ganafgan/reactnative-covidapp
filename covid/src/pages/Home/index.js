@@ -1,0 +1,156 @@
+import React, { useState, useEffect } from 'react'
+import { StyleSheet, Text, View, ImageBackground, Image, ScrollView } from 'react-native'
+import { colors, fonts } from '../../utils'
+import { ILDoctor3, ILPatient, ILHand, ILBuilding } from '../../assets'
+import {BoxItem, BoxItemBig, AboutCovid, ListNews, Loading} from '../../components'
+import axios from 'axios'
+
+const Home = (props) => {
+    
+    const [dataCovid, setDataCovid] = useState(null)
+    const [dataNews, setDataNews] = useState(null)
+    console.log(dataCovid)
+    console.log(dataNews)
+
+
+    useEffect(()=>{
+        getData()
+        getDataNews()
+    },[])
+
+
+
+    const getData = () => {
+            axios.get('https://api.kawalcorona.com/indonesia')
+            .then((res)=>{
+                setDataCovid(res.data)
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+    }
+
+    const getDataNews = () => {
+        var API_KEY = 'ae88de4fa148465f8f3d91c0ad3a77bd'
+        axios.get(`http://newsapi.org/v2/top-headlines?country=id&apiKey=${API_KEY}`)
+        .then((res)=>{
+            setDataNews(res.data.articles)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
+
+    const renderDataNews = () => {
+
+       let kata = 'corona'
+
+        let filtered = dataNews.filter((val)=>{
+            return val.title.toLowerCase().includes(kata.toLowerCase())
+        })
+        if(filtered === null){
+            return <h4>Berita Kosong</h4>
+        }
+        return filtered.map((val, index)=>{
+            return(
+                <ListNews
+                    key={index}
+                    title={val.title.length > 75 ? val.title.slice(0,50) + '. . .' : val.title}
+                    img={{uri: val.urlToImage}}
+                    onPress={val.url}
+                />
+            )
+        })
+
+    }
+
+    if( dataCovid === null || dataCovid.length === 0){
+        return <Loading />
+    }
+    return (
+        <View style={styles.container}>
+            <View style={styles.page}>
+                <View style={styles.banner}>
+                    <View style={styles.textcontent}>
+                        <Text style={styles.text}>Fight Covid-19</Text>
+                        <Text style={styles.text}>Starting</Text>
+                        <Text style={styles.text}>With You</Text>
+                    </View>
+                    <Image source={ILDoctor3} style={styles.img}/>
+                </View>
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <View style={styles.content}>
+                        <Text style={styles.title}>Covid-19 Update</Text>
+                        <View style={styles.boxItem2}>
+                            <BoxItemBig count={dataCovid[0].positif} status='Positive'/>
+                            <BoxItemBig count={dataCovid[0].dirawat} status='Active'/>
+                        </View>
+                        <View style={styles.boxItem2}>
+                            <BoxItemBig count={dataCovid[0].sembuh} status='Recovered'/>
+                            <BoxItemBig count={dataCovid[0].meninggal} status='Death'/>
+                        </View>
+                    </View>
+                    <View style={styles.content}>
+                        <Text style={styles.title}>About Covid-19</Text>
+                        <AboutCovid img={ILPatient} title='Seputar gejala Covid-19' />
+                        <AboutCovid img={ILHand} title='Tips mencegah Covid-19' />
+                        <AboutCovid img={ILBuilding} title='Rumah Sakit rujukan Covid-19' />
+                    </View>
+                    <View style={styles.content}>
+                        <Text style={styles.title}>Covid-19 News</Text>
+                        {renderDataNews()}
+                    </View>
+                </ScrollView>
+            </View>
+        </View>
+    )
+}
+
+export default Home
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: colors.primary,
+    },
+    page: {
+        flex: 1,
+        backgroundColor: colors.white,
+        borderRadius: 20
+    },
+    img: {
+        height: 200,
+        width: 270,
+        
+    },
+    text: {
+        fontSize: 20,
+        textAlign: 'center',
+        fontFamily: fonts.primary[600]
+    },
+    banner: {
+        flexDirection: 'row',
+        backgroundColor: colors.white
+    },
+    textcontent: {
+        marginLeft: 30,
+        marginTop: 70
+    },
+    title: {
+        fontSize: 16,
+        fontFamily: fonts.primary[600],
+        marginTop: 20
+    },
+    content: {
+        paddingLeft: 20,
+        paddingRight: 20,
+    },
+    boxItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    boxItem2: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    }
+})
