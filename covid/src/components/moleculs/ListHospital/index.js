@@ -5,7 +5,7 @@ import { colors, fonts } from '../../../utils'
 
 const ListHospital = (props) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={props.onPress}>
             <Image source={props.img} style={styles.img} />
             <View>
                 <Text style={styles.title}>Rumah Sakit</Text>

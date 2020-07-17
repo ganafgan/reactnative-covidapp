@@ -1,12 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Splash } from './pages';
 import Router from './router';
 
 const App = () => {
   return (
-	<NavigationContainer>
+	<NavigationContainer linking >
 		<Router />
 	</NavigationContainer>
   )

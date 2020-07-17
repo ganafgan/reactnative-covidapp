@@ -4,7 +4,8 @@
             "id": 1,
             "nama": "RSUP Hasan Sadikin",
             "alamat": "Jl. Pasteur No.38",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rsup-dr-hasan-sadikin-HCFH00000548.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rsup-dr-hasan-sadikin-HCFH00000548.jpg",
+            "url": "https://www.google.co.id/maps"
         },
         {
             "id": 2,

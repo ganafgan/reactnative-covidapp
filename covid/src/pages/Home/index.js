@@ -49,6 +49,7 @@ const Home = (props) => {
         let filtered = dataNews.filter((val)=>{
             return val.title.toLowerCase().includes(kata.toLowerCase())
         })
+       
         if(filtered === null){
             return <h4>Berita Kosong</h4>
         }
@@ -58,7 +59,7 @@ const Home = (props) => {
                     key={index}
                     title={val.title.length > 75 ? val.title.slice(0,55) + '. . .' : val.title}
                     img={{uri: val.urlToImage}}
-                    onPress={val.url}
+                    onPress={() => props.navigation.navigate('test', {url: val.url})}
                 />
             )
         })

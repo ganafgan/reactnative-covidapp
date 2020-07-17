@@ -5,7 +5,7 @@ import { ListHospital } from '../../components'
 import { colors } from '../../utils'
 import {JsonHospitals} from '../../assets'
 
-const Location = () => {
+const Location = (props) => {
 
     return (
         <View style={styles.page}>
@@ -22,6 +22,7 @@ const Location = () => {
                                         nama={val.nama}
                                         alamat={val.alamat}
                                         img={{uri: val.img}}
+                                        onPress={() => props.navigation.navigate('test', {url: val.url})}
                                     />
                         })
                     }
