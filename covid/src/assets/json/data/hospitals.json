@@ -5,62 +5,71 @@
             "nama": "RSUP Hasan Sadikin",
             "alamat": "Jl. Pasteur No.38",
             "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rsup-dr-hasan-sadikin-HCFH00000548.jpg",
-            "url": "https://www.google.co.id/maps"
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Umum+Pusat+Dr.+Hasan+Sadikin+Bandung/@-6.8964253,107.5967242,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e642a7183059:0xd07affd224606be5!8m2!3d-6.8964253!4d107.5989129"
         },
         {
             "id": 2,
             "nama": "Santosa Hospital",
             "alamat": "Jl. Kebon Jati No.38",
-            "img": "https://santosa-hospital.com/upload_files/images/shbk-link.png"
+            "img": "https://santosa-hospital.com/upload_files/images/shbk-link.png",
+            "url": "https://www.google.co.id/maps/place/Santosa+Hospital+Bandung+Central/@-6.9154516,107.5982065,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e617d0c2f737:0x431124759b6e7ebb!8m2!3d-6.9154516!4d107.6003952"
         },
         {
             "id": 3,
             "nama": "Santo Boromeus",
             "alamat": "Jl. Juanda No. 100",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-borromeus-HCFH00000543.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-borromeus-HCFH00000543.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Santo+Borromeus+:+Instalasi+Gawat+Darurat/@-6.8935468,107.6113247,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e65105bde5cf:0xa07b97a3e2f05064!8m2!3d-6.8935468!4d107.6135134"
         },
         {
             "id": 4,
             "nama": "Santo Yusup",
             "alamat": "Jl. Cikutra No. 7",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-yusup-HCFH00000547.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-santo-yusup-HCFH00000547.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Santo+Yusup/@-6.9066752,107.6409069,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e7c06f9ea13b:0xcf06c68ddaa96d0!8m2!3d-6.9066752!4d107.6430956"
         }
         ,
         {
             "id": 5,
             "nama": "Imanuel Bandung",
             "alamat": "Jl. Kopo No. 161 ",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-immanuel-HCFH00000640.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-immanuel-HCFH00000640.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Immanuel/@-6.9354451,107.5942595,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e63a678eb8eb:0x4fd7850c66c9441d!8m2!3d-6.9354451!4d107.5964482"
         },
         {
             "id": 6,
             "nama": "Muhammadiyah Bandung",
             "alamat": "Jl. KH Ahmad Dahlan No. 53",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-muhammadiyah-bandung-HCFH00000545.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-muhammadiyah-bandung-HCFH00000545.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Muhammadiyah+Bandung/@-6.9334543,107.6210163,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e87ddb7a5863:0x17cc7ee41569932a!8m2!3d-6.9334543!4d107.623205"
         },
         {
             "id": 7,
             "nama": "Advent Bandung",
             "alamat": "Jalan Cihampelas No. 161",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-advent-bandung-HCFH00000542.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-advent-bandung-HCFH00000542.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Advent+Bandung/@-6.892027,107.6008916,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e65953aee66f:0x6ee9d5e49deb230b!8m2!3d-6.892027!4d107.6030803"
         },
         {
             "id": 8,
             "nama": "Dr. M. Salamun",
             "alamat": "Jl. Raya Ciumbeulit No. 203",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-angkatan-udara-dr-m-salamun-HCFH00000621.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-angkatan-udara-dr-m-salamun-HCFH00000621.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+TNI+AU+dr.+M.+Salamun/@-6.8640603,107.6026379,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e6c234c6a8cd:0xa22cc3cf0a6e3b0c!8m2!3d-6.8640603!4d107.6048266"
         },
         {
             "id": 9,
             "nama": "Kebon Jati",
             "alamat": "Jl. Kebonjati No.152",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-kebon-jati-HCFH00000549.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-kebon-jati-HCFH00000549.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Kebon+Jati/@-6.9161037,107.5941307,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e6110a99f253:0xf8e7e5dbf3a2be84!8m2!3d-6.9161037!4d107.5963194"
         },
         {
             "id": 10,
             "nama": "KCK Pindad",
             "alamat": "Jl. Gatot Subroto No.517",
-            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-mata-bandung-eye-center-HCFH00001354.jpg"
+            "img": "https://cms.sehatq.com/cdn-cgi/image/f=auto/public/img/hospital_thumb/rs-mata-bandung-eye-center-HCFH00001354.jpg",
+            "url": "https://www.google.co.id/maps/place/Rumah+Sakit+Umum+Pindad/@-6.9400513,107.6440642,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e7d7aaca1dd7:0xe74d584850abc234!8m2!3d-6.9400513!4d107.6462529"
         }
 
     ]

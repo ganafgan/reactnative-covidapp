@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
-import { ILResearch } from '../../assets'
+import { ILReseacrh } from '../../assets'
 import { colors, fonts } from '../../utils'
 
 const Descriptions = (props) => {
@@ -10,7 +10,7 @@ const Descriptions = (props) => {
 
     return (
         <View style={styles.container}> 
-            <ImageBackground source={ILResearch} style={styles.img}>
+            <ImageBackground source={ILReseacrh} style={styles.img}>
                 <Text style={styles.title}>Frequently Asked Question(FAQ)</Text>
                 <Text style={styles.subtitle}>Covid-19</Text>
             </ImageBackground>

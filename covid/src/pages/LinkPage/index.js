@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-const TestPage = (props) => {
+const LinkPage = (props) => {
 
 
     const url = props.route.params.url
@@ -11,11 +11,10 @@ const TestPage = (props) => {
     return (
         <WebView
         source={{uri: url }}
-        style={{marginTop: 20}}
         />
     )
 }
 
-export default TestPage
+export default LinkPage
 
 const styles = StyleSheet.create({})

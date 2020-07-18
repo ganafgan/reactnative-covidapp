@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
-import { ILDoctor3, JsonAboutCovid } from '../../assets'
+import { ILDoctor, JsonAboutCovid } from '../../assets'
 import { AboutCovid, BoxItemBig, ListNews, Loading } from '../../components'
 import { colors, fonts } from '../../utils'
 
@@ -59,7 +59,7 @@ const Home = (props) => {
                     key={index}
                     title={val.title.length > 75 ? val.title.slice(0,55) + '. . .' : val.title}
                     img={{uri: val.urlToImage}}
-                    onPress={() => props.navigation.navigate('test', {url: val.url})}
+                    onPress={() => props.navigation.navigate('LinkPage', {url: val.url})}
                 />
             )
         })
@@ -92,7 +92,7 @@ const Home = (props) => {
                         <Text style={styles.text}>Starting</Text>
                         <Text style={styles.text}>With You</Text>
                     </View>
-                    <Image source={ILDoctor3} style={styles.img}/>
+                    <Image source={ILDoctor} style={styles.img}/>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View style={styles.content}>

@@ -22,7 +22,7 @@ const Location = (props) => {
                                         nama={val.nama}
                                         alamat={val.alamat}
                                         img={{uri: val.img}}
-                                        onPress={() => props.navigation.navigate('test', {url: val.url})}
+                                        onPress={() => props.navigation.navigate('LinkPage', {url: val.url})}
                                     />
                         })
                     }

@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { BottomNavigator } from '../components';
-import { Descriptions, Home, Location, Message, Splash, TestPage } from '../pages';
+import { Descriptions, Home, LinkPage, Location, Message, Splash } from '../pages';
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -18,12 +18,12 @@ const MainApp = () => {
 }
 const Router = () => {
     return(
-        <Stack.Navigator initialRouteName='MainApp'>
+        <Stack.Navigator initialRouteName='Splash'>
             <Stack.Screen name='Splash' component={Splash} options={{headerShown: false}} />
             <Stack.Screen name='MainApp' component={MainApp} options={{headerShown: false}} />
             <Stack.Screen name='FAQ' component={Message} options={{headerShown: false}} />
             <Stack.Screen name='Descriptions' component={Descriptions} options={{headerShown: false}} />
-            <Stack.Screen name='test' component={TestPage} options={{headerShown: false}} />
+            <Stack.Screen name='LinkPage' component={LinkPage} options={{headerShown: false}} />
         </Stack.Navigator>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native'
-import { ILResearch, JsonAboutCovid } from '../../assets'
+import { JsonAboutCovid, ILReseacrh } from '../../assets'
 import { AboutCovid } from '../../components'
 import { colors, fonts } from '../../utils'
 
@@ -9,7 +9,7 @@ const Message = (props) => {
 
     return (
         <View style={styles.container}>
-            <ImageBackground source={ILResearch} style={styles.img}>
+            <ImageBackground source={ILReseacrh} style={styles.img}>
                 <Text style={styles.title}>Frequently Asked Question(FAQ)</Text>
                 <Text style={styles.subtitle}>Covid-19</Text>
             </ImageBackground>
