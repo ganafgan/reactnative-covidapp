@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { ILHospitals } from '../../assets'
-import { ListHospital } from '../../components'
+import { ListHospital, Button } from '../../components'
 import { colors } from '../../utils'
 import {JsonHospitals} from '../../assets'
 
@@ -26,7 +26,9 @@ const Location = (props) => {
                                     />
                         })
                     }
-                    
+                    <View style={styles.buttonContainer}>
+                        <Button title='Cari lainnya' onPress={() => props.navigation.navigate('Map')} />
+                    </View>
                 </ScrollView>
             </View>
         </View>
@@ -62,6 +64,10 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         flex: 1,
         marginTop: -20
-        
+    },
+    buttonContainer: {
+        paddingHorizontal: 20,
+        marginBottom: 50,
+        marginTop: 20
     }
 })

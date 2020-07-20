@@ -4,6 +4,7 @@ import Location from './Location';
 import Message from './Message';
 import Descriptions from './Descripctions'
 import LinkPage from './LinkPage'
+import Map from './Map'
 
 export {
     Splash,
@@ -11,5 +12,6 @@ export {
     Location,
     Message,
     Descriptions,
-    LinkPage
+    LinkPage,
+    Map
 }

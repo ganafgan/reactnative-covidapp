@@ -7,7 +7,7 @@ import {Gap} from './../../components'
 const Splash = ({navigation}) => {
     useEffect(()=>{
         setTimeout(()=>{
-            navigation.navigate('MainApp')
+            navigation.replace('MainApp')
         }, 1000)
     },[])
 

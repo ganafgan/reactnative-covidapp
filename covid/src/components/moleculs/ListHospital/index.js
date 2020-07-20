@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     },
     address: {
         fontSize: 12,
-        fontFamily: fonts.primary[300],
+        fontFamily: fonts.primary[600],
         color: colors.text.secondary,
         marginTop: 6
     }

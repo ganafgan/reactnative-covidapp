@@ -1,15 +1,17 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View, RefreshControl } from 'react-native'
 import { ILDoctor, JsonAboutCovid } from '../../assets'
 import { AboutCovid, BoxItemBig, ListNews, Loading } from '../../components'
 import { colors, fonts } from '../../utils'
+import moment from 'moment';
 
 
 const Home = (props) => {
     
     const [dataCovid, setDataCovid] = useState(null)
     const [dataNews, setDataNews] = useState(null)
+    const [refreshing, setRefreshing] = useState(false)
     console.log(dataCovid)
     console.log(dataNews)
 
@@ -25,6 +27,7 @@ const Home = (props) => {
             axios.get('https://api.kawalcorona.com/indonesia')
             .then((res)=>{
                 setDataCovid(res.data)
+                setRefreshing(false)
             })
             .catch((err)=>{
                 console.log(err)
@@ -53,12 +56,13 @@ const Home = (props) => {
         if(filtered === null){
             return <h4>Berita Kosong</h4>
         }
-        return filtered.map((val, index)=>{
+        return dataNews.map((val, index)=>{
             return(
                 <ListNews
                     key={index}
-                    title={val.title.length > 75 ? val.title.slice(0,55) + '. . .' : val.title}
+                    title={val.title.length > 70 ? val.title.slice(0,55) + '. . .' : val.title}
                     img={{uri: val.urlToImage}}
+                    desc={moment(val.publishedAt).startOf('hour').fromNow() }
                     onPress={() => props.navigation.navigate('LinkPage', {url: val.url})}
                 />
             )
@@ -94,7 +98,14 @@ const Home = (props) => {
                     </View>
                     <Image source={ILDoctor} style={styles.img}/>
                 </View>
-                <ScrollView showsVerticalScrollIndicator={false}>
+                <ScrollView showsVerticalScrollIndicator={false} 
+                    refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => {
+                        setRefreshing(true)
+                        getData()
+                        getDataNews()
+
+                    }} />}
+                >
                     <View style={styles.content}>
                         <Text style={styles.title}>Covid-19 Update</Text>
                         <View style={styles.boxItem2}>
